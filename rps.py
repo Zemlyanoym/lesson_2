@@ -21,6 +21,11 @@ while True:
         print("Ничья")
     else:
         print("You win!")
+    if input("Еще играем? 1-Да, 0-нет: ") == "1":
+        continue
+    else:
+        break
+
 
 
 
