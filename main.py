@@ -6,6 +6,7 @@ from word_searcher import word_searcher
 
 
 if __name__ == "__main__":
+
     print("Привет. Это самая полезная программа в мире.")
     print("Ты можешь выбрать любое из 6 приложений:")
     print("1. Калькулятор от Павла")
