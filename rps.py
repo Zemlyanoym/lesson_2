@@ -7,4 +7,5 @@ win_hands = {"камень": "ножницы",
 
 
 while True:
-    pass
+    user_hand = input("Введите номер: ")
+
