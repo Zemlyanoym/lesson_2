@@ -8,4 +8,3 @@ win_hands = {"камень": "ножницы",
 
 while True:
     user_hand = input("Введите номер: ")
-
