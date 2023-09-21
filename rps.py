@@ -1,20 +1,19 @@
 import random
+
 hands = ["камень", "ножницы", "бумага"]
 win_hands = {"камень": "ножницы",
              "ножницы": "бумага",
              "бумага": "камень",
-
              }
-
 
 while True:
     bot_hand = random.choice(hands)
-
+    # Меню
     print("1 - камень")
     print("2 - ножницы")
     print("3 - бумага")
     user_hand = input("Введите номер: ")
-
+    # Проверка введенных данных
     if len(user_hand) != 1:
         print("Необходимо вводить одну цифру!")
         continue
@@ -27,10 +26,10 @@ while True:
         print("Необходимо вводить только цифры!")
         continue
 
-    print(f"Bot: {bot_hand}, you: {hands[user_hand-1]}")
-    if win_hands[bot_hand] == hands[user_hand-1]:
-        print("Bot win", win_hands[bot_hand])
-    elif bot_hand == hands[user_hand-1]:
+    print(f"Bot: {bot_hand}, You: {hands[user_hand - 1]}")
+    if win_hands[bot_hand] == hands[user_hand - 1]:
+        print("Bot win")
+    elif bot_hand == hands[user_hand - 1]:
         print("Ничья")
     else:
         print("You win!")
@@ -38,9 +37,3 @@ while True:
         continue
     else:
         break
-
-
-
-
-
-
